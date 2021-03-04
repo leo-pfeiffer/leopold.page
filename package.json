@@ -1,0 +1,30 @@
+{
+  "name": "leopold.page",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo-pfeiffer/leopold.page.git"
+  },
+  "keywords": [
+    "personal",
+    "website"
+  ],
+  "author": "Leopold Pfeiffer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leo-pfeiffer/leopold.page/issues"
+  },
+  "homepage": "https://github.com/leo-pfeiffer/leopold.page#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
