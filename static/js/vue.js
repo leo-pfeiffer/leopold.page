@@ -1,10 +1,18 @@
-const makeLayout = function() {
+const makeHero = function() {
     console.log('Hello from makeLayout()')
 
-    const layoutVue = new Vue({
-
+    const heroVue = new Vue({
+        el: "#hero",
+        data: {
+            name: "Leopold Pfeiffer",
+            tagline: "Software Engineer.",
+            socials: {
+                linkedin: 'https://www.linkedin.com/in/leopoldpfeiffer/',
+                github: 'https://github.com/leo-pfeiffer'
+            }
+        }
     })
 
 }
 
-window.onload = makeLayout;
+window.onload = makeHero;
