@@ -9,7 +9,7 @@ enableRobotsTXT = true
 
 [params]
 title = "Leopold Pfeiffer"
-author = "Leopold pfeiffer"
+author = "Leopold Pfeiffer"
 description = "Software Engineer"
 profilePicture = "images/small_square.png"
 keywords = "personal website"
@@ -22,7 +22,7 @@ doNotLoadAnimations = false
 [[params.socialIcons]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
-url = "https://www.linkedin.com/leopoldpfeiffer"
+url = "https://www.linkedin.com/in/leopoldpfeiffer"
 
 [[params.socialIcons]]
 icon = "fab fa-github"
