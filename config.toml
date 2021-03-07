@@ -1,7 +1,8 @@
-baseURL = "https://www.leopold.page/"
+baseURL = "http://leo-pfeiffer.github.io/"
 languageCode = "en-us"
 title = "Leopold Pfeiffer"
 theme = "anatole"
+publishdir = "leo-pfeiffer.github.io"
 
 [params]
 title = "Leopold Pfeiffer"
