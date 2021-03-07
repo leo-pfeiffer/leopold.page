@@ -1,23 +1,28 @@
-baseURL = "http://leo-pfeiffer.github.io/"
-languageCode = "en-us"
+baseURL = "https://www.leopold.page"
+languageCode = "en"
+DefaultContentLanguage = "en"
 title = "Leopold Pfeiffer"
 theme = "anatole"
-publishdir = "leo-pfeiffer.github.io"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
 
 [params]
 title = "Leopold Pfeiffer"
-author = "Leopold Pfeiffer"
-description = "Software Engineer."
+author = "Leopold pfeiffer"
+description = "Software Engineer"
 profilePicture = "images/small_square.png"
-keywords = ""
+keywords = "personal website"
 favicon = "favicons/"
+mainSections = ["post"]
+doNotLoadAnimations = false
 
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
 [[params.socialIcons]]
 icon = "fab fa-linkedin"
 title = "Linkedin"
-url = "http://linkedin.com/in/leopoldpfeiffer/"
+url = "https://www.linkedin.com/leopoldpfeiffer"
 
 [[params.socialIcons]]
 icon = "fab fa-github"
@@ -28,3 +33,4 @@ url = "https://github.com/leo-pfeiffer"
 icon = "fas fa-envelope"
 title = "e-mail"
 url = "mailto:leopold.pfeiffer@icloud.com"
+
