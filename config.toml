@@ -1,3 +1,29 @@
-baseURL = "http://example.org/"
+baseURL = "https://www.leopold.page/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Leopold Pfeiffer"
+theme = "anatole"
+
+[params]
+title = "Leopold Pfeiffer"
+author = "Leopold Pfeiffer"
+description = "Software Engineer."
+profilePicture = "images/small_square.png"
+keywords = ""
+favicon = "favicons/"
+
+## Social links
+# use 'fab' when brand icons, use 'fas' when standard solid icons.
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "http://linkedin.com/in/leopoldpfeiffer/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/leo-pfeiffer"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:leopold.pfeiffer@icloud.com"
