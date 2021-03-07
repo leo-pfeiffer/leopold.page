@@ -7,6 +7,7 @@ summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
 
+
 [params]
 title = "Leopold Pfeiffer"
 author = "Leopold Pfeiffer"
@@ -14,8 +15,14 @@ description = "Software Engineer"
 profilePicture = "images/small_square.png"
 keywords = "personal website"
 favicon = "favicons/"
-mainSections = ["post"]
+mainSections = ["cv"]
 doNotLoadAnimations = false
+displayMode = "dark"
+
+## Date formats
+singleDateFormat = "Jan 2006"
+indexDateFormat = "Jan 2006"
+listDateFormat = "Jan 2006"
 
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
@@ -34,3 +41,16 @@ icon = "fas fa-envelope"
 title = "e-mail"
 url = "mailto:me@leopold.page"
 
+[menu]
+
+  [[menu.main]]
+  name = "CV"
+  identifier = "cv"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 200
+  identifier = "about"
+  url = "/about/"
