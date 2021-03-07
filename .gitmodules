@@ -1,3 +1,6 @@
 [submodule "themes/anatole"]
 	path = themes/anatole
 	url = https://github.com/lxndrblz/anatole/
+[submodule "themes/anatole-fork"]
+	path = themes/anatole-fork
+	url = https://github.com/lxndrblz/anatole

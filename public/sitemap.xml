@@ -2,9 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://leopold.page/overview/bsc-gbm/</loc>
+  </url><url>
     <loc>https://leopold.page/categories/</loc>
   </url><url>
     <loc>https://leopold.page/</loc>
+  </url><url>
+    <loc>https://leopold.page/overview/msc-dia/</loc>
+  </url><url>
+    <loc>https://leopold.page/overview/</loc>
   </url><url>
     <loc>https://leopold.page/tags/</loc>
   </url>

@@ -2,7 +2,7 @@ baseURL = "https://leopold.page/"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Leopold Pfeiffer"
-theme = "anatole"
+theme = "anatole-fork"
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
@@ -15,7 +15,7 @@ description = "Software Engineer"
 profilePicture = "images/small_square.png"
 keywords = "personal website"
 favicon = "favicons/"
-mainSections = ["cv"]
+mainSections = ["overview"]
 doNotLoadAnimations = false
 displayMode = "dark"
 
@@ -44,13 +44,37 @@ url = "mailto:me@leopold.page"
 [menu]
 
   [[menu.main]]
-  name = "CV"
-  identifier = "cv"
+  name = "overview"
+  identifier = "overview"
   weight = 100
   url = "/"
 
   [[menu.main]]
-  name = "About"
+  name = "education"
+  identifier = "education"
   weight = 200
+  url = "/education/"
+
+  [[menu.main]]
+  name = "work experience"
+  identifier = "work experience"
+  weight = 300
+  url = "/work-experience/"
+
+  [[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 400
+  url = "/projects/"
+
+  [[menu.main]]
+  name = "skills"
+  identifier = "skills"
+  weight = 500
+  url = "/skills/"
+
+  [[menu.main]]
+  name = "about"
+  weight = 600
   identifier = "about"
   url = "/about/"
