@@ -1,3 +1,6 @@
 [submodule "themes/anatole"]
 	path = themes/anatole
 	url = https://github.com/lxndrblz/anatole.git
+[submodule "public/leopold.page.public"]
+	path = public/leopold.page.public
+	url = git@github.com:leo-pfeiffer/leopold.page.public.git
