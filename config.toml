@@ -15,7 +15,7 @@ description = "Software Engineer"
 profilePicture = "images/small_square.png"
 keywords = "personal website"
 favicon = "favicons/"
-mainSections = ["overview"]
+mainSections = [""]
 doNotLoadAnimations = false
 displayMode = "dark"
 
@@ -44,8 +44,8 @@ url = "mailto:me@leopold.page"
 [menu]
 
   [[menu.main]]
-  name = "overview"
-  identifier = "overview"
+  name = "home"
+  identifier = "home"
   weight = 100
   url = "/"
 
@@ -78,3 +78,4 @@ url = "mailto:me@leopold.page"
   weight = 600
   identifier = "about"
   url = "/about/"
+
