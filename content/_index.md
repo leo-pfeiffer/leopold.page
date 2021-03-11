@@ -1,8 +1,14 @@
 +++
-title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-author = "Hugo Authors"
+title = "Home"
+description = "Home"
+author = "Leopold Pfeiffer"
 +++
 
-Main text bla bla bla
+[Education](/education)
+
+[Work Experience](/work-experience)
+
+[Projects](/projects)
+
+[Skills](/skills)
+
