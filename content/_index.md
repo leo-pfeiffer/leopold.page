@@ -4,39 +4,53 @@ description = "Home"
 author = "Leopold Pfeiffer"
 +++
 
-[Education](/education)
-### MSc Data-Intensive Analysis
-**University of St Andrews**
+### MSc Data-Intensive Analysis  
+|  |  |
+| :------- | :------- |
+|  | ![](images/st-andrews.png) |  
 
-Sep 2020 - Sep 2021
+**University of St Andrews**  
+Sep 2020 - Sep 2021  
+St Andrews, UK  
+Current GPA: 18.5 ([4.0 US](https://www.st-andrews.ac.uk/administration/academicdatateam/assessmentandawards/undergraduateinformation/))  
 
-St Andrews, UK
+----
+### BSc Global Business Management  
+|  |  |
+| :------- | :------- |
+|  | ![](images/augsburg.png) |  
+**University of Augsburg**
+Oct 2017 - Jun 2020  
+Augsburg, Germany  
+GPA: 1,38 ([~ 3.7 US](https://www.oecd.org/careers/young-associate-programme/yap_gpa_guidelines.pdf))  
 
-Current GPA: 18.5 ([4.0 US](https://www.st-andrews.ac.uk/administration/academicdatateam/assessmentandawards/undergraduateinformation/))
+----
+### Visiting Student (Maths, Financial Econ & Management)  
+|  |  |
+| :------- | :------- |
+|  | ![](images/st-andrews.png) |  
 
+**University of St Andrews**  
+Sep 2019 - Dec 2019  
+St Andrews, UK  
 
-### BSc Global Business Management
-**Augsburg University**
+----
+### A-levels equivalent ("Abitur")
+|  |  |
+| :------- | :------- |
+|  | ![](images/skg.png) |  
 
-Oct 2017 - Jun 2020
+Sep 2009 - Jun 2017  
+Krumbach, Germany
+GPA: 1,0 ([~ 4.0 US](https://www.oecd.org/careers/young-associate-programme/yap_gpa_guidelines.pdf))  
 
-Augsburg, Germany
+----
+### Student exchange  
+|  |  |
+| :------- | :------- |
+|  | ![]() |  
+**Mt Eliza Secondary College**  
+Feb 2015 - Apr 2015  
+Mt Eliza, Australia  
 
-GPA: 1,38 ([~ 3.7 US](https://www.oecd.org/careers/young-associate-programme/yap_gpa_guidelines.pdf))
-
-
-### Visiting Student (Maths, Financial Econ & Management)
-
-**University of St Andrews**
-
-Sep 2019 - Dec 2019
-
-St Andrews, UK
-
-
-[Work Experience](/work-experience)
-
-[Projects](/projects)
-
-[Skills](/skills)
 
