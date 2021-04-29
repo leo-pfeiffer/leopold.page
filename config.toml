@@ -48,8 +48,8 @@ url = "mailto:me@leopold.page"
 [menu]
 
   [[menu.main]]
-  name = "home"
-  identifier = "home"
+  name = "cv"
+  identifier = "cv"
   weight = 100
   url = "/"
 
