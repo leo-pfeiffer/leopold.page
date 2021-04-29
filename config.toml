@@ -21,7 +21,7 @@ keywords = "personal website"
 favicon = "favicons/"
 mainSections = [""]
 doNotLoadAnimations = false
-displayMode = "dark"
+displayMode = "light"
 
 ## Date formats
 singleDateFormat = "Jan 2006"
