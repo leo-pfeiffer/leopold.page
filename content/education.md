@@ -6,3 +6,10 @@ author = "Leopold Pfeiffer"
 +++
 
 Stuff about my fancy education
+
+### MSc Data-Intensive Analysis
+bla bla bla
+
+### BSc Global Business Management
+bla bla bla
+
