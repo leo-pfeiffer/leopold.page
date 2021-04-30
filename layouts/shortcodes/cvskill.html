@@ -1,0 +1,9 @@
+{{ $num := .Get 0}}
+
+{{ range $i, $sequence := (seq $num) }}
+<i class="fas fa-circle">
+{{ end }}
+
+{{ range $i, $sequence := (seq (sub 5 $num)) }}
+<i class="far fa-circle">
+{{ end }}

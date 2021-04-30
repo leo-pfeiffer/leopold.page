@@ -72,14 +72,8 @@ url = "mailto:me@leopold.page"
   url = "/projects/"
 
   [[menu.main]]
-  name = "skills"
-  identifier = "skills"
-  weight = 500
-  url = "/skills/"
-
-  [[menu.main]]
   name = "about"
-  weight = 600
+  weight = 500
   identifier = "about"
   url = "/about/"
 

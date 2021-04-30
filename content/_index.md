@@ -67,4 +67,83 @@ author = "Leopold Pfeiffer"
 ----
 ----
 
-# [Skills](/skills)
+# Skills
+
+### Software Engineering
+|  |  |
+| :------- | :------- |
+| Python | {{< cvskill 5>}} |
+| > Django | {{< cvskill 4>}} |
+| > pandas | {{< cvskill 4>}} |
+| > pytest | {{< cvskill 4>}} |
+| > sqlalchemy | {{< cvskill 3>}} |
+<br>
+| JavaScript | {{< cvskill 4>}} |
+| > Node.js | {{< cvskill 4>}} |
+| > VueJS | {{< cvskill 3>}} |
+| > Mocha + Chai | {{< cvskill 3>}} |
+<br>
+| Java | {{< cvskill 3>}} |
+| > JUnit | {{< cvskill 3>}} |
+| > AWT | {{< cvskill 2>}} |
+| > Swing | {{< cvskill 2>}} |
+| > Socket & ServerSocket | {{< cvskill 2>}} |
+<br>
+| OOP | {{< cvskill 5>}} |
+| Data structures & Algorithms | {{< cvskill 4>}} |
+| Test-driven development | {{< cvskill 4>}} |
+| RESTful APIs | {{< cvskill 4>}} |
+| SQL | {{< cvskill 3>}} |
+| MongoDB | {{< cvskill 3>}} |
+| Docker | {{< cvskill 1>}} |
+
+----
+### Statistics
+|  |  |
+| :------- | :------- |
+| Statistical Programming | {{< cvskill 4>}} |
+| > R (tidyverse) | {{< cvskill 4>}} |
+| > Python (pandas, sklearn) | {{< cvskill 4>}} |
+| > SAS | {{< cvskill 1>}} |
+<br>
+| OLS | {{< cvskill 5>}} |
+| GLMs | {{< cvskill 4>}} |
+| GAMs | {{< cvskill 4>}} |
+| Machine Learning | {{< cvskill 2>}} |
+
+----
+### Project management
+|  |  |
+| :------- | :------- |
+| Process modelling | {{< cvskill 3>}} |
+| > BPMN 2.0 | {{< cvskill 4>}} |
+| > UML | {{< cvskill 1>}} |
+<br>
+| Scrum | {{< cvskill 3>}} |
+
+----
+### Languages
+|  |  |
+| :------- | :------- |
+| German | {{< cvskill 5>}} |
+| English | {{< cvskill 5>}} |
+| French | {{< cvskill 3>}} |
+| Spanish | {{< cvskill 2>}} |
+
+----
+----
+
+# Scholarships and Awards
+
+### [German Academic Scholarship Foundation ("Studienstiftung")](https://www.studienstiftung.de/en/)
+|  |  |
+| :------- | :------- |
+| **Scholarship for outstanding academic achievement**<br>Awarded to best ~ 0.5% of German university students <br>Dec 2017 - today | ![](images/sdv.png) |
+<br>
+----
+### [Max Weber Programme](https://www.elitenetzwerk.bayern.de/en/home/funding-programs/max-weber-program)
+|  |  |
+| :------- | :------- |
+| **Scholarship for outstanding academic achievement**<br>Awarded to the best university students in Bavaria, Germany<br>Oct 2017 - today | ![](images/mwp.png) |
+<br>
+----
