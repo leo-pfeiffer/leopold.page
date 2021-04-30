@@ -147,3 +147,5 @@ author = "Leopold Pfeiffer"
 | **Scholarship for outstanding academic achievement**<br>Awarded to the best university students in Bavaria, Germany<br>Oct 2017 - today | ![](images/mwp.png) |
 <br>
 ----
+----
+[Download CV as PDF](/pdf/cv.pdf)
