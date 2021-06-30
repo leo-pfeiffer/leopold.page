@@ -175,4 +175,8 @@ img {
   color: gray;
 }
 
+div {
+  white-space: nowrap;
+}
+
 </style>
