@@ -1,3 +1,5 @@
+![Online status](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fleopold.page)
+
 # leopold-page
 
 ## Project setup
