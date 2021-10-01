@@ -6,13 +6,11 @@ import VueCalendly from 'vue-calendly';
 Vue.use(VueCalendly);
 
 
-const NotFound = { template: '<p>Page not found</p>' }
-const About = { template: '<p>about page</p>' }
+const NotFound = { template: '<p>Page not found.. sorry</p>' }
 
 const routes = {
   '/': App,
   '/scheduler': Scheduler,
-  '/about': About
 }
 
 Vue.config.productionTip = false
