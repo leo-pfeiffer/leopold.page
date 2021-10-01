@@ -32,6 +32,7 @@ export default {
   left: 50%;
   width: 620px;
   max-width: 90vw;
+  max-height: 80vh;
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);

@@ -6,7 +6,7 @@ import VueCalendly from 'vue-calendly';
 Vue.use(VueCalendly);
 
 
-const NotFound = { template: '<p>Page not found.. sorry</p>' }
+// const NotFound = { template: '<p>Page not found.. sorry</p>' }
 
 const routes = {
   '/': App,
@@ -22,7 +22,7 @@ new Vue({
   },
   computed: {
     ViewComponent () {
-      return routes[this.currentRoute] || NotFound
+      return routes[this.currentRoute]  // || NotFound
     }
   },
   render (h) { return h(this.ViewComponent) }
