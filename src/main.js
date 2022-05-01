@@ -1,16 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Scheduler from './Scheduler.vue'
-import VueCalendly from 'vue-calendly';
-
-Vue.use(VueCalendly);
-
+import './assets/tailwind.css'
+import 'flowbite'
 
 const NotFound = { template: '<p>Page not found.. <a href="/">Go back</a></p>' }
 
 const routes = {
   '/': App,
-  '/scheduler': Scheduler,
 }
 
 Vue.config.productionTip = false
