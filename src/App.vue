@@ -1,6 +1,7 @@
 <template>
-  <div id="app" class="bg-white dark:bg-monokai-blue h-full flex items-start justify-center">
-      <img id="my-img" class="absolute hidden lg:block h-full -left-36 -z-10 opacity-30" :src="require('@/assets/bw.png')" alt="Leopold Pfeiffer">
+  <div id="app" class="h-screen flex items-start justify-center">
+      <img id="my-img" class="absolute hidden lg:block h-full -left-36 -z-10 opacity-20 dark:opacity-30"
+           :src="require('@/assets/bw-gradient.png')" alt="Leopold Pfeiffer">
       <div class="container z-10">
         <div class="text-monokai-blue dark:text-monokai-white text-5xl text-center mt-20">
           {{ name }}
@@ -118,13 +119,6 @@ export default {
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
 
 #my-img {
-  background: transparent!important;
-  //background: linear-gradient(top, rgba( 255, 255, 255, 255 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
-  //background: -moz-linear-gradient(top, rgba( 255, 255, 255, 0) 0%, rgba( 255, 255, 255, 1 ) 100% );
-  //background: -ms-linear-gradient(top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
-  //background: -o-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
-  //background: -webkit-linear-gradient( top, rgba( 255, 255, 255, 0 ) 0%, rgba( 255, 255, 255, 1 ) 100% );
-  //-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF);
-  //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#ffffffff);
+  min-height: 700px!important;
 }
 </style>
