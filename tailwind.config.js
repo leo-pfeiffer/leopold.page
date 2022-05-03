@@ -1,7 +1,7 @@
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   purge: [],
-  darkMode: 'media',
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -11,6 +11,7 @@ module.exports = {
         'monokai-orange': '#e87d3e',
         'monokai-red': '#F92672',
         'monokai-green': '#A6E22E',
+        'monokai-purple': '#7d09ff',
       }
     },
   },

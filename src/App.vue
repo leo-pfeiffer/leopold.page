@@ -1,28 +1,40 @@
 <template>
   <div id="app" class="h-screen flex items-start justify-center">
-      <img id="my-img" class="absolute hidden lg:block h-full -left-36 -z-10 opacity-20 dark:opacity-30"
-           :src="require('@/assets/bw-gradient.png')" alt="Leopold Pfeiffer">
-      <div class="container z-10">
-        <div class="text-monokai-blue dark:text-monokai-white text-5xl text-center mt-20">
+      <div class="container">
+        <header class="sm:sticky ml-8 top-0 w-full flex text-xs text-black dark:text-white float-right">
+          <span class="inline-block align-middle bg-white dark:bg-monokai-blue flex py-8">
+            <button id="darkmode-button" class="text-xs p-1 rounded-md" v-on:click="toggleButton">
+              <svg v-if="darkMode" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+              </svg>
+              <svg v-if="!darkMode" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="black">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+              </svg>
+            </button>
+          </span>
+        </header>
+        <div class="text-monokai-red text-5xl text-center mt-4">
           {{ name }}
         </div>
         <div>
           <div class="w-5/6 max-w-4xl ml-auto mr-auto mt-16 mb-8 text-center justify-center">
             <div class="grid place-items-center">
               <p class="text-lg leading-normal text-monokai-blue dark:text-monokai-white mb-8 max-w-2xl">
-                <span v-for="b in bio" :key="b">{{ b }}&nbsp;</span>
+                Hi, I'm <span class="text-monokai-purple dark:text-monokai-green">Leo</span> - I'm an aspiring <span class="text-monokai-purple dark:text-monokai-green">Software Engineer</span> currently studying at the University of St Andrews in Scotland.
+                I'm mostly interested in <span class="text-monokai-purple dark:text-monokai-green">full-stack web development</span> and anything that involves lots of data.
+                When I'm not writing code, you will likely find me working out or enjoying a good cup of coffee.
               </p>
             </div>
             <div>
-              <a v-bind:href="linkedin" class="fa-brands fa-linkedin text-monokai-blue dark:text-monokai-white text-3xl m-1"></a>
-              <a v-bind:href="github" class="fa-brands fa-github text-monokai-blue dark:text-monokai-white text-3xl m-1"></a>
-              <a v-bind:href="devto" class="fa-brands fa-dev text-monokai-blue dark:text-monokai-white text-3xl m-1"></a>
+              <a v-bind:href="linkedin" class="fa-brands fa-linkedin text-monokai-purple dark:text-monokai-green text-3xl m-1"></a>
+              <a v-bind:href="github" class="fa-brands fa-github text-monokai-purple dark:text-monokai-green text-3xl m-1"></a>
+              <a v-bind:href="devto" class="fa-brands fa-dev text-monokai-purple dark:text-monokai-green text-3xl m-1"></a>
             </div>
           </div>
           <div class="w-5/6 max-w-4xl ml-auto mr-auto mt-16 mb-8">
             <div class="flex flex-wrap -mx-6 -my-6">
               <div class="w-full sm:w-full lg:w-1/2 px-6 py-6">
-                <h3 class="text-3xl font-semibold text-monokai-blue dark:text-monokai-white mb-4">
+                <h3 class="text-3xl font-semibold text-monokai-red mb-4">
                   Education
                 </h3>
                 <div id="education-accordion-collapse" data-accordion="collapse" data-inactive-classes="text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700">
@@ -30,19 +42,19 @@
                     <div :id="'education-accordion-collapse-heading-' + i">
                       <div type="button" class="w-full text-left text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer"
                            :data-accordion-target="'#education-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'education-accordion-collapse-body-'+i">
-                        <div class="font-bold">{{item.uni}}</div>
-                        <div class="text-sm"><span class="font-bold">{{item.time}}  </span>{{item.name}}</div>
+                        <div>{{item.uni}}</div>
+                        <div class="text-sm"><span class="text-monokai-gray">{{item.time}}  </span>{{item.name}}</div>
                       </div>
                     </div>
                     <div :id="'education-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'education-accordion-collapse-heading-'+i">
                       <div class="px-1">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
+                        <p class="mb-2 text-monokai-gray text-sm" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <h3 class="text-3xl font-semibold text-monokai-blue dark:text-monokai-white mb-4 mt-8">
+                <h3 class="text-3xl font-semibold text-monokai-red mb-4 mt-8">
                   Work Experience
                 </h3>
                 <div id="work-accordion-collapse" data-accordion="collapse" data-inactive-classes="text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700">
@@ -50,13 +62,13 @@
                     <div :id="'work-accordion-collapse-heading-' + i">
                       <div type="button" class="w-full text-left text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer"
                            :data-accordion-target="'#work-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'work-accordion-collapse-body-'+i">
-                        <div class="font-bold">{{item.company}}</div>
-                        <div class="text-sm"><span class="font-bold">{{item.time}}  </span>{{item.name}}</div>
+                        <div>{{item.company}}</div>
+                        <div class="text-sm"><span class="text-monokai-gray">{{item.time}}  </span>{{item.name}}</div>
                       </div>
                     </div>
                     <div :id="'work-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'work-accordion-collapse-heading-'+i">
                       <div class="px-1">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
+                        <p class="mb-2 text-sm text-monokai-gray" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
                       </div>
                     </div>
                   </div>
@@ -64,13 +76,13 @@
 
               </div>
               <div class="w-full sm:w-full lg:w-1/2 px-6 py-6">
-                <h3 class="text-3xl font-semibold text-monokai-blue dark:text-monokai-white mb-3">
+                <h3 class="text-3xl font-semibold text-monokai-red mb-3">
                   Projects
                 </h3>
 
                 <div v-for="item of projects" :key="item.name" class="text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer">
                   <a :href="item.url">
-                    <div class="font-bold">{{item.name}}</div>
+                    <div>{{item.name}}</div>
                     <div class="text-sm"><span class="fa-brands fa-github">&nbsp;</span>{{item.info}}</div>
                   </a>
                 </div>
@@ -79,7 +91,6 @@
                 <a href="https://github.com/leo-pfeiffer?tab=repositories" class="text-sm text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer">
                   ... more on GitHub
                 </a>
-
               </div>
             </div>
           </div>
@@ -95,23 +106,68 @@ export default {
   name: 'App',
   components: {
   },
+  mounted() {
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage['color-theme'] === 'dark' ||
+        (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark')
+      this.darkMode = true;
+    } else {
+      document.documentElement.classList.remove('dark')
+      this.darkMode = false;
+    }
+  },
+  methods: {
+    toggleButton() {
+      // if set via local storage previously
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+          this.darkMode = true;
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+          this.darkMode = false;
+        }
+        // if NOT set via local storage previously
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+          this.darkMode = false;
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+          this.darkMode = true;
+        }
+      }
+    }
+  },
   data() {
     return {
+      darkMode: false,
       isToggle: false,
       name: "Leopold Pfeiffer",
       title: "Software Engineer",
-      bio: [
-          "Hi, I'm Leo - I'm an aspiring Software Engineer currently studying at the University of St Andrews in Scotland.",
-          "I'm mostly interested in full-stack web development and anything that involves lots of data.",
-          "When I'm not writing code, you will likely find me working out or enjoying a good cup of coffee."
-      ],
       education: [
         {time: '2021-2022', name: 'MSc Software Engineering', uni: 'University of St Andrews, UK',
-          info: []},
+          info: [
+              "Particularly interested in data-driven systems and full-stack web development",
+              "Modules: Software Engineering Practice/Principles, Software Architecture, AI Practice, Constraint Programming, Database Management Systems",
+          ]},
         {time: '2020-2021', name: 'MSc Data Intensive Analysis', uni: "University of St Andrews, UK",
-          info: []},
+          info: [
+              "Data science degree, focussed on statistical programming, mostly in R",
+              "Modules: OOP, Statistical Computing, Advanced Data Analysis, Data Visualization, ...",
+              "Found Software Engineering as my true passion"
+          ]},
         {time: '2017-2020', name: 'BSc Global Business Management', uni: "Augsburg University, Germany",
-          info: []},
+          info: [
+              "Focussed on finance and quantitative method",
+              "Modules: Data Analysis, Operations Research, Corporate Finance, ...",
+              "Started playing around with Python and R on the side and fell in love with programming",
+          ]},
       ],
       experience: [
         {time: '2021 (13 mo)', name: 'Data Engineer & Developer', company: 'DJE Kapital AG',
@@ -144,7 +200,4 @@ export default {
 <style>
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
 
-#my-img {
-  min-height: 700px!important;
-}
 </style>
