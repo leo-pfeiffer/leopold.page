@@ -7,6 +7,10 @@ const NotFound = { template: '<p>Page not found.. <a href="/">Go back</a></p>' }
 
 const routes = {
   '/': App,
+  '/meet': { template: '<p>Redirecting...</p>', beforeCreate() {
+      window.location.href = 'https://calendly.com/leo-pfeiffer?hide_gdpr_banner=1';
+    }
+  }
 }
 
 Vue.config.productionTip = false

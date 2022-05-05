@@ -45,18 +45,18 @@
                 <div id="education-accordion-collapse" data-accordion="collapse" data-inactive-classes="text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700">
                   <div v-for="(item, i) in education" :key="item.name">
                     <div :id="'education-accordion-collapse-heading-' + i">
-                      <div type="button" class="w-full text-left text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer"
+                      <div class="w-full text-left text-monokai-blue dark:text-monokai-white hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md cursor-pointer"
                            :data-accordion-target="'#education-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'education-accordion-collapse-body-'+i">
                         <div class="flex justify-between">
                           {{item.uni}}
-                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </div>
-                        <div class="text-sm"><span class="text-monokai-gray">{{item.time}}  </span>{{item.name}}</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.name}}</div>
                       </div>
                     </div>
                     <div :id="'education-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'education-accordion-collapse-heading-'+i">
                       <div class="px-1">
-                        <p class="mb-2 text-monokai-gray text-sm" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
+                        <p class="mb-2 text-gray-500 dark:text-gray-400 text-sm" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
                       </div>
                     </div>
                   </div>
@@ -68,18 +68,18 @@
                 <div id="work-accordion-collapse" data-accordion="collapse" data-inactive-classes="text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700">
                   <div v-for="(item, i) in experience" :key="item.name">
                     <div :id="'work-accordion-collapse-heading-' + i">
-                      <div type="button" class="w-full text-left text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer"
+                      <div class="w-full text-left text-monokai-blue dark:text-monokai-white hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md cursor-pointer"
                            :data-accordion-target="'#work-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'work-accordion-collapse-body-'+i">
                         <div class="flex justify-between">
                           {{item.company}}
-                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </div>
-                        <div class="text-sm"><span class="text-monokai-gray">{{item.time}}  </span>{{item.name}}</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.name}}</div>
                       </div>
                     </div>
                     <div :id="'work-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'work-accordion-collapse-heading-'+i">
                       <div class="px-1">
-                        <p class="mb-2 text-sm text-monokai-gray" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
+                        <p class="mb-2 text-sm text-gray-500 dark:text-gray-400" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
                       </div>
                     </div>
                   </div>
@@ -91,10 +91,10 @@
                   Projects
                 </h3>
 
-                <div v-for="item of projects" :key="item.name" class="text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer p-1">
+                <div v-for="item of projects" :key="item.name" class="text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer p-2">
                   <a :href="item.url" target="_blank">
                     <div>{{item.name}}</div>
-                    <div class="text-sm"><span class="fa-brands fa-github">&nbsp;</span>{{item.info}}</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400"><span class="fa-brands fa-github">&nbsp;&nbsp;</span>{{item.info}}</div>
                   </a>
                 </div>
 
