@@ -31,14 +31,14 @@
               </p>
             </div>
             <div>
-              <a v-bind:href="linkedin" class="fa-brands fa-linkedin text-monokai-purple dark:text-monokai-green text-3xl m-1"></a>
-              <a v-bind:href="github" class="fa-brands fa-github text-monokai-purple dark:text-monokai-green text-3xl m-1"></a>
-              <a v-bind:href="devto" class="fa-brands fa-dev text-monokai-purple dark:text-monokai-green text-3xl m-1"></a>
+              <a v-bind:href="linkedin" class="fa-brands fa-linkedin text-monokai-purple dark:text-monokai-green text-3xl m-1" target="_blank"></a>
+              <a v-bind:href="github" class="fa-brands fa-github text-monokai-purple dark:text-monokai-green text-3xl m-1" target="_blank"></a>
+              <a v-bind:href="devto" class="fa-brands fa-dev text-monokai-purple dark:text-monokai-green text-3xl m-1" target="_blank"></a>
             </div>
           </div>
           <div class="w-5/6 max-w-4xl ml-auto mr-auto mt-16 mb-8">
             <div class="flex flex-wrap -mx-6 -my-6">
-              <div class="w-full sm:w-full lg:w-1/2 px-6 py-6">
+              <div class="w-full sm:w-full lg:w-1/2 px-6 py-6 ">
                 <h3 class="text-3xl font-semibold text-monokai-red mb-4">
                   Education
                 </h3>
@@ -47,7 +47,10 @@
                     <div :id="'education-accordion-collapse-heading-' + i">
                       <div type="button" class="w-full text-left text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer"
                            :data-accordion-target="'#education-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'education-accordion-collapse-body-'+i">
-                        <div>{{item.uni}}</div>
+                        <div class="flex justify-between">
+                          {{item.uni}}
+                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
                         <div class="text-sm"><span class="text-monokai-gray">{{item.time}}  </span>{{item.name}}</div>
                       </div>
                     </div>
@@ -67,7 +70,10 @@
                     <div :id="'work-accordion-collapse-heading-' + i">
                       <div type="button" class="w-full text-left text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer"
                            :data-accordion-target="'#work-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'work-accordion-collapse-body-'+i">
-                        <div>{{item.company}}</div>
+                        <div class="flex justify-between">
+                          {{item.company}}
+                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
                         <div class="text-sm"><span class="text-monokai-gray">{{item.time}}  </span>{{item.name}}</div>
                       </div>
                     </div>
@@ -80,21 +86,21 @@
                 </div>
 
               </div>
-              <div class="w-full sm:w-full lg:w-1/2 px-6 py-6">
+              <div class="w-full sm:w-full lg:w-1/2 px-6 lg:py-6">
                 <h3 class="text-3xl font-semibold text-monokai-red mb-3">
                   Projects
                 </h3>
 
-                <div v-for="item of projects" :key="item.name" class="text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer">
-                  <a :href="item.url">
+                <div v-for="item of projects" :key="item.name" class="text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer p-1">
+                  <a :href="item.url" target="_blank">
                     <div>{{item.name}}</div>
                     <div class="text-sm"><span class="fa-brands fa-github">&nbsp;</span>{{item.info}}</div>
                   </a>
                 </div>
 
                 <hr class="mt-4 mb-4">
-                <a href="https://github.com/leo-pfeiffer?tab=repositories" class="text-sm text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer">
-                  ... more on GitHub
+                <a href="https://github.com/leo-pfeiffer?tab=repositories" class="text-sm text-monokai-blue dark:text-monokai-white mb-2 hover:bg-gray-200 dark:hover:bg-gray-700 p-1 rounded-md cursor-pointer" target="_blank">
+                  ➝ more on GitHub
                 </a>
               </div>
             </div>
