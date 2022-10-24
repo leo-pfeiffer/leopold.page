@@ -169,13 +169,13 @@ export default {
           ]},
         {time: '2020-2021', name: 'MSc Data Intensive Analysis', uni: "University of St Andrews, UK",
           info: [
-              "Data science degree, focussed on statistical programming, mostly in R",
+              "Data science degree, focussed on statistical programming, mostly in R and Python",
               "Modules: OOP, Statistical Computing, Advanced Data Analysis, Data Visualization, ...",
               "Found Software Engineering as my true passion"
           ]},
         {time: '2017-2020', name: 'BSc Global Business Management', uni: "Augsburg University, Germany",
           info: [
-              "Focussed on finance and quantitative method",
+              "Focussed on finance and quantitative methods",
               "Modules: Data Analysis, Operations Research, Corporate Finance, ...",
               "Started playing around with Python and R on the side and fell in love with programming",
           ]},
