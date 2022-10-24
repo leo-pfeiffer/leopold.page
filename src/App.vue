@@ -183,7 +183,7 @@ export default {
       experience: [
         {time: 'since Sep 2022', name: 'Data Engineer', company: 'Addepar',
           info: [
-            "Developing and maintaining data pipelines for financial data",
+            "Develop and maintain data pipelines for financial data",
             "Tech: Java"
           ]},
         {time: '2021 (13 mo)', name: 'Data Engineer & Developer', company: 'DJE Kapital AG',
