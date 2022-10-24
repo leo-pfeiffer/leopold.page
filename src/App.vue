@@ -25,9 +25,9 @@
           <div class="w-5/6 max-w-4xl ml-auto mr-auto mt-16 mb-8 text-center justify-center">
             <div class="grid place-items-center">
               <p class="text-lg leading-normal text-monokai-blue dark:text-monokai-white mb-8 max-w-2xl">
-                Hi, I'm <span class="text-monokai-purple dark:text-monokai-green">Leo</span> - I'm an aspiring <span class="text-monokai-purple dark:text-monokai-green">Software Engineer</span> currently studying at the University of St Andrews in Scotland.
-                I'm mostly interested in <span class="text-monokai-purple dark:text-monokai-green">full-stack web development</span> and anything that involves lots of data.
-                When I'm not writing code, you will likely find me working out or enjoying a good cup of coffee.
+                Hi, I'm <span class="text-monokai-purple dark:text-monokai-green">Leo</span> - I'm a <span class="text-monokai-purple dark:text-monokai-green">Data / Software Engineer</span> currently working at Addepar.
+                I'm interested in all things <span class="text-monokai-purple dark:text-monokai-green">data</span> and <span class="text-monokai-purple dark:text-monokai-green">full-stack web development</span>.
+                When I'm not writing code, you'll likely find me working out or enjoying a good cup of coffee.
               </p>
             </div>
             <div>
@@ -40,29 +40,6 @@
             <div class="flex flex-wrap -mx-6 -my-6">
               <div class="w-full sm:w-full lg:w-1/2 px-6 py-6 ">
                 <h3 class="text-3xl font-semibold text-monokai-red mb-4">
-                  Education
-                </h3>
-                <div id="education-accordion-collapse" data-accordion="collapse" data-inactive-classes="text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700">
-                  <div v-for="(item, i) in education" :key="item.name">
-                    <div :id="'education-accordion-collapse-heading-' + i">
-                      <div class="w-full text-left text-monokai-blue dark:text-monokai-white hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md cursor-pointer"
-                           :data-accordion-target="'#education-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'education-accordion-collapse-body-'+i">
-                        <div class="flex justify-between">
-                          {{item.uni}}
-                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                        </div>
-                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.name}}</div>
-                      </div>
-                    </div>
-                    <div :id="'education-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'education-accordion-collapse-heading-'+i">
-                      <div class="px-1">
-                        <p class="mb-2 text-gray-500 dark:text-gray-400 text-sm" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <h3 class="text-3xl font-semibold text-monokai-red mb-4 mt-8">
                   Work Experience
                 </h3>
                 <div id="work-accordion-collapse" data-accordion="collapse" data-inactive-classes="text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700">
@@ -80,6 +57,29 @@
                     <div :id="'work-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'work-accordion-collapse-heading-'+i">
                       <div class="px-1">
                         <p class="mb-2 text-sm text-gray-500 dark:text-gray-400" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 class="text-3xl font-semibold text-monokai-red mb-4 mt-8">
+                  Education
+                </h3>
+                <div id="education-accordion-collapse" data-accordion="collapse" data-inactive-classes="text-monokai-blue dark:text-monokai-white mb-4 hover:bg-gray-200 dark:hover:bg-gray-700">
+                  <div v-for="(item, i) in education" :key="item.name">
+                    <div :id="'education-accordion-collapse-heading-' + i">
+                      <div class="w-full text-left text-monokai-blue dark:text-monokai-white hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md cursor-pointer"
+                           :data-accordion-target="'#education-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'education-accordion-collapse-body-'+i">
+                        <div class="flex justify-between">
+                          {{item.uni}}
+                          <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.name}}</div>
+                      </div>
+                    </div>
+                    <div :id="'education-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'education-accordion-collapse-heading-'+i">
+                      <div class="px-1">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400 text-sm" v-for="(exp, i) in item.info" :key="i">{{ exp }}</p>
                       </div>
                     </div>
                   </div>
@@ -159,7 +159,7 @@ export default {
     return {
       darkMode: false,
       isToggle: false,
-      name: "Leopold Pfeiffer",
+      name: "Leo Pfeiffer",
       title: "Software Engineer",
       education: [
         {time: '2021-2022', name: 'MSc Software Engineering', uni: 'University of St Andrews, UK',
@@ -181,6 +181,11 @@ export default {
           ]},
       ],
       experience: [
+        {time: 'since Sep 2022', name: 'Data Engineer', company: 'Addepar',
+          info: [
+            "Developing and maintaining data pipelines for financial data",
+            "Tech: Java"
+          ]},
         {time: '2021 (13 mo)', name: 'Data Engineer & Developer', company: 'DJE Kapital AG',
           info: [
             "Developed data pipelines and monitoring algorithms for compliance tool; first fully cloud-based application at DJE deployed on Azure",
@@ -195,6 +200,7 @@ export default {
           ]},
       ],
       projects: [
+        {name: 'Zebbra', info: 'Zebbra is a web application for Financial Planning & Analysis for small businesses', url: 'https://github.com/leo-pfeiffer/zebbra'},
         {name: 'Git Commit Analyzer', info: 'Visual analytics tool for your Git commit history', url: 'https://github.com/leo-pfeiffer/git-commit-analyzer'},
         {name: 'Glasshouse', info: 'Data dashboard where I gather data from apps I use everyday', url: 'https://github.com/leo-pfeiffer/glasshouse'},
         {name: 'EpiSim: A Web App for Epidemic Modelling', info: 'Modelled complex contact network from mobility data and built epidemic simulations integrated into web app', url: 'https://github.com/leo-pfeiffer/epi-sim'},
