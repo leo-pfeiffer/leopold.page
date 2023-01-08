@@ -48,10 +48,10 @@
                       <div class="w-full text-left text-monokai-blue dark:text-monokai-white hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md cursor-pointer"
                            :data-accordion-target="'#work-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'work-accordion-collapse-body-'+i">
                         <div class="flex justify-between">
-                          {{item.company}}
+                          {{item.name}}
                           <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </div>
-                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.name}}</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.company}}</div>
                       </div>
                     </div>
                     <div :id="'work-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'work-accordion-collapse-heading-'+i">
@@ -71,10 +71,10 @@
                       <div class="w-full text-left text-monokai-blue dark:text-monokai-white hover:bg-gray-200 dark:hover:bg-gray-700 p-2 rounded-md cursor-pointer"
                            :data-accordion-target="'#education-accordion-collapse-body-'+i" aria-expanded="false" :aria-controls="'education-accordion-collapse-body-'+i">
                         <div class="flex justify-between">
-                          {{item.uni}}
+                          {{item.name}}
                           <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="gray" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </div>
-                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.name}}</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400">{{item.time}} | {{item.uni}}</div>
                       </div>
                     </div>
                     <div :id="'education-accordion-collapse-body-'+i" class="hidden" :aria-labelledby="'education-accordion-collapse-heading-'+i">
